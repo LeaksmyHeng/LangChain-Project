@@ -10,3 +10,5 @@ os.environ['GEMINI_API_NAME'] = ''
 os.environ['GEMINI_API_PROJECT_NAME'] = ''
 os.environ['GEMINI_API_PROJECT_NUMBER'] = ''
 os.environ['OPENAI_API_KEY'] = ''
+
+print(1)
