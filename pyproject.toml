@@ -1,0 +1,27 @@
+[project]
+name = "langchain-llm"
+dynamic = ["version"] # Best practice: Compute version from git tags instead of hardcoding
+description = "A Python package for working with large language models (LLMs) using LangChain."
+readme = {file = "README.txt", content-type = "text/markdown"}
+requires-python = ">=3.10"
+authors = [
+    { name = "Leaksmy Heng", email = "hengleaksmy1998@gmail.com" }
+]
+
+dependencies = [
+    "chromadb>=1.5.9,<2.0.0",
+    "langchain>=1.4.0,<2.0",
+    "langchain-community>=0.4.2,<0.5.0",
+    "langchain-openai>=1.6.2,<2.0.0",
+    "requests>=2.31.0",
+    "pydantic>=2.0",
+    "tiktoken>=0.14.0,<=1.0.0",
+]
+
+[project.optional-dependencies]
+# Separate development and test environments cleanly
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.1",
+    "mypy>=1.8",
+]
